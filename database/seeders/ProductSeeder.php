@@ -16,11 +16,23 @@ class ProductSeeder extends Seeder
     {
         //
         DB::table('products')->insert([
-            'nama' => 'Hoodie gambar mikey',
-            'harga' => '200.000',
+            ['nama' => 'Hoodie abu abu',
+            'harga' => '190.000',
             'deskripsi' => 'Hoodie bahan sejuk dan nyaman dipakai',
             'kategori' => 'Hoodie',
-            'gallery' => 'https://images.app.goo.gl/naEkivRt2V3NBqQD6'
+            'gallery' => 'https://images.app.goo.gl/gS8eFTtoEk5YanLp6'],
+
+            ['nama' => 'Kaos batman',
+            'harga' => '135.000',
+            'deskripsi' => 'kaos bahan sejuk dan nyaman dipakai',
+            'kategori' => 'kaos',
+            'gallery' => 'https://images.app.goo.gl/oqdczjX6QqRMY2kB8'],
+
+            ['nama' => 'Kaos sablon lengan panjang ',
+            'harga' => '155.000',
+            'deskripsi' => 'kaos bahan sejuk dan nyaman dipakai',
+            'kategori' => 'kaos lengan panjang ',
+            'gallery' => 'https://images.app.goo.gl/WsuPyxDBTvydubQw7'],
            
         ]);
     }
