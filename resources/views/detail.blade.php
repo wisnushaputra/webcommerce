@@ -12,7 +12,11 @@
                 <h4>Detail : {{ $product['deskripsi'] }}</h4>
                 <h4>Kategori : {{ $product['kategori'] }}</h4>
                 <br><br>
-                <button class="btn btn-primary">Add To Cart</button>
+                <form action="/add_to_cart" method="POST">
+                    @csrf
+                    <input type="hidden" name="product_id" value={{ $product['id'] }}>
+                    <button class="btn btn-primary">Add To Cart</button>
+                </form>
                 <br><br>
                 <button class="btn btn-success">Beli sekarang</button>
                 <br><br>

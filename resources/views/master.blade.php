@@ -47,6 +47,9 @@
     .detail-img{
         height: 200px;
     }
+    .search-box{
+        width: 700px !important;
+    }
 
 </style>
 </html>

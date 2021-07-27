@@ -2,14 +2,14 @@
 @section('content')
  <div class=" custom-product">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+        {{-- form untuk gambar slide produk --}}
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
       
-        <!-- Wrapper for slides -->
+        {{-- form untuk gambar slide produk --}}
         <div class="carousel-inner">
           @foreach ($products as $item)
           <div class="item {{ $item ['id'] == 1 ? 'active' : '' }}">
@@ -24,7 +24,7 @@
           @endforeach      
         </div>
       
-        <!-- Left and right controls -->
+        <!-- Left and right controls for slide picture -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Previous</span>
@@ -34,6 +34,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      {{-- Form untuk trending product --}}
       <div class="trending-wrapper">
         <h3>Trending products</h3>
         @foreach ($products as $item)
